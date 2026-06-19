@@ -25,7 +25,8 @@
     /* HEADER */
     header {
       position: fixed; inset: 0 0 auto; z-index: 100;
-      height: 156px;
+      padding-top: 6px;
+      padding-bottom: 6px;
       background: rgba(255,255,255,0.96);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(0,0,0,0.07);
@@ -45,7 +46,7 @@
 
     /* HERO */
     .hero {
-      min-height: 100svh; padding-top: 156px;
+      min-height: 100svh; padding-top: 148px;
       background: var(--blue); overflow: hidden; position: relative;
     }
     .hero::before {
@@ -57,7 +58,7 @@
     .hero-content {
       position: relative; z-index: 2;
       display: grid; grid-template-columns: 1fr;
-      min-height: calc(100svh - 156px);
+      min-height: calc(100svh - 148px);
     }
     .hero-text {
       display: flex; flex-direction: column;
